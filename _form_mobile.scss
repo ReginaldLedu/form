@@ -1,0 +1,82 @@
+@media (max-width: 800px) {
+  @mixin title-mobile() {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
+  }
+  @mixin mobile__item-title() {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  @mixin block-titles-mobile() {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .header {
+    height: 50px;
+  }
+
+  .telegram__button {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+  }
+  .telegram__button:hover {
+    transform: scale(1.1);
+  }
+
+  .telegram {
+    width: 35px;
+    height: 35px;
+  }
+
+  .whatsapp__button {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+  }
+  .whatsapp__button:hover {
+    transform: scale(1.1);
+  }
+  .whatsapp {
+    width: 35px;
+    height: 35px;
+  }
+
+  .form {
+    width: 330px;
+  }
+  .item__fromUser {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 140px;
+    height: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .logo__img {
+    width: 140px;
+    height: 70px;
+  }
+  .form__title {
+    @include title-mobile();
+    text-align: center;
+    word-spacing: normal;
+  }
+
+  .form__label {
+    @include mobile__item-title();
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия Эльф</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="static/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="static/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="static/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="static/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="static/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="static/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="static/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="static/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="static/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="static/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="static/icons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img class="logo__img" src="./static/logo_landing.png" alt=""
+        /></a>
+      </div>
+
+      <div class="media__buttons">
+        <div class="whatsapp__button">
+          <a
+            href="https://web.whatsapp.com/send?autoload=1&app_absent=0&phone=79270459204&text"
+            ><img
+              class="whatsapp"
+              src="./static/whatsapp.svg"
+              alt="whatsappIcon"
+          /></a>
+        </div>
+        <div class="telegram__button">
+          <a href="https://t.me/elf_i_ya"
+            ><img
+              class="telegram"
+              src="./static/telegram.svg"
+              alt="telegramIcon"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <div class="form">
+      <h1 class="form__title">Для брони праздника необходимо указать:</h1>
+      <form class="form__body" action="#" id="form">
+        <div class="item">
+          <label for="form__date" class="form__label">Дата и время</label>
+          <input
+            id="form__date"
+            name="date"
+            class="item__fromUser _req"
+            type="text"
+          />
+        </div>
+        <div class="item">
+          <label for="form__hero" class="form__label">Желаемый персонаж</label>
+          <input
+            id="form__hero"
+            name="hero"
+            class="item__fromUser _req"
+            type="text"
+          />
+        </div>
+        <div class="item">
+          <label for="form__program" class="form__label"
+            >Желаемая программа и продолжительность</label
+          >
+          <!--<input id="form__program" name="program" class="item__fromUser _req" type="text">-->
+          <select name="program" id="form__program" class="item__fromUser _req">
+            <option>Выберите программу</option>
+            <option value="СТАНДАРТ 1 час">СТАНДАРТ 1 час</option>
+            <option value="СТАНДАРТ 2 часа">СТАНДАРТ 2 часа</option>
+            <option value="ПЛЮС 1 час">ПЛЮС 1 час</option>
+            <option value="ПЛЮС 2 часа">ПЛЮС 2 часа</option>
+            <option value="ГИГАНТ 1 час">ГИГАНТ 1 час</option>
+            <option value="ГИГАНТ 2 часа">ГИГАНТ 2 часа</option>
+            <option value="ТВОРЧЕСКАЯ 1 час">ТВОРЧЕСКАЯ 1 час</option>
+            <option value="ТВОРЧЕСКАЯ 2 часа">ТВОРЧЕСКАЯ 2 часа</option>
+            <option value="НАУЧНАЯ 1 час">НАУЧНАЯ 1 час</option>
+            <option value="НАУЧНАЯ 2 часа">НАУЧНАЯ 2 часа</option>
+            <option value="Мастер-Класс">Мастер-Класс</option>
+          </select>
+        </div>
+        <div class="item">
+          <label for="form__kidName" class="form__label"
+            >Имя именинника/именинницы и возраст ребенка</label
+          >
+          <input
+            id="form__kidName"
+            name="kidName"
+            class="item__fromUser _req"
+            type="text"
+          />
+        </div>
+        <div class="item">
+          <label for="form__kidQuantity" class="form__label"
+            >Количество детей и их возраст</label
+          >
+          <input
+            id="form__kidQuantity"
+            name="kidQuantity"
+            class="item__fromUser _req"
+            type="text"
+          />
+        </div>
+        <div class="item">
+          <label for="form__address" class="form__label">Точный адрес</label>
+          <input
+            id="form__address"
+            name="address"
+            class="item__fromUser _req"
+            type="text"
+          />
+        </div>
+        <div class="item">
+          <label for="form__phone" class="form__label"
+            >Ваш номер телефона</label
+          >
+          <input
+            id="form__phone"
+            name="phone"
+            class="item__fromUser _req"
+            type="text"
+          />
+        </div>
+
+        <button type="submit" class="submit">Отправить</button>
+      </form>
+      <a href="index.html">
+        <button class="back">Назад</button>
+      </a>
+    </div>
+  </body>
+</html>

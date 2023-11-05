@@ -1,0 +1,36 @@
+@media (max-width:1289px){
+	
+	@mixin title-mobile(){
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 55px;
+		}
+		@mixin mobile__item-title(){
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+			}
+		@mixin block-titles-mobile(){
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 30px;
+			line-height: 34px;
+			}
+			.form__title {
+				@include title-mobile();
+			
+				word-spacing: normal;
+			}
+			.form{
+				width:600px;
+			}
+			.form__label {
+				@include mobile__item-title();
+			}
+			
+		}
